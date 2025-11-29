@@ -1,0 +1,66 @@
+# API Testing Template
+# Created: 2025-11-28
+
+# ============================================
+# Environment Variables
+# ============================================
+
+### Localhost
+@baseUrl = http://localhost:8000
+@token = your-token-here
+@apiKey = your-api-key-here
+
+
+# ============================================
+# Authentication
+# ============================================
+
+### Login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "password"
+}
+
+
+# ============================================
+# API Endpoints
+# ============================================
+
+### Get All Items
+GET {{baseUrl}}/items
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Get Single Item
+GET {{baseUrl}}/items/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Create Item
+POST {{baseUrl}}/items
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "New Item",
+  "description": "Item description"
+}
+
+### Update Item
+PUT {{baseUrl}}/items/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Updated Item",
+  "description": "Updated description"
+}
+
+### Delete Item
+DELETE {{baseUrl}}/items/1
+Authorization: Bearer {{token}}
+
+

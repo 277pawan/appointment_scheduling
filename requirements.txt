@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+requests
+langchain==0.3.26
+langchain-google-genai==2.1.5
+google-genai
+chromadb
+

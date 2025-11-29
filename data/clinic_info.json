@@ -1,0 +1,24 @@
+{
+  "Clinic Details": [
+    {
+      "question": "Where is the clinic located?",
+      "answer": "We are located at 123 Main Street, Springfield, with free parking behind the building."
+    },
+    {
+      "question": "What are your hours of operation?",
+      "answer": "We are open Monday to Friday, 9:00 AM to 5:00 PM."
+    }
+  ],
+  "Insurance & Billing": [
+    {
+      "question": "Which insurance providers do you accept?",
+      "answer": "We accept most major providers including Blue Cross, Aetna, Cigna, UnitedHealthcare, and Medicare."
+    }
+  ],
+  "Policies": [
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "Please cancel or reschedule at least 24 hours before your appointment to avoid a fee."
+    }
+  ]
+}
